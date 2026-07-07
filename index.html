@@ -1,225 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manoj | Portfolio</title>
+    <title>Manoj Shanigaram | Portfolio</title>
 
     <link rel="stylesheet" href="styles.css">
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <style>
-        html{
-            scroll-behavior:smooth;
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- ================= NAVIGATION ================= -->
+
     <nav>
-        <h2 class="logo">Manoj</h2>
+
+        <h2 class="logo">Manoj<span>.</span></h2>
 
         <ul>
+
             <li><a href="#home">Home</a></li>
+
             <li><a href="#about">About</a></li>
+
             <li><a href="#skills">Skills</a></li>
+
             <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#certifications">Certifications</a></li>
+
             <li><a href="#contact">Contact</a></li>
+
         </ul>
+
     </nav>
 
-    <!-- Home -->
-    <section id="home" class="section home">
+    <!-- ================= HOME ================= -->
 
-        <img src="manu.png"
-             alt="Manoj Profile"
-             class="profile-img"
-             width="200">
+    <section id="home" class="home">
 
-        <h1>Hello, I'm <span>Manoj Shanigaram</span></h1>
+        <div class="home-content">
 
-        <p>
-            Full Stack Web Developer<br>
-            HTML • CSS • JavaScript • Java • Node.js
-        </p>
+            <div class="text">
 
-        <button onclick="scrollToContact()">Hire Me</button>
+                <h3>Hello, I'm</h3>
 
-        <br><br>
+                <h1>Manoj Shanigaram</h1>
 
-        <a href="resume.pdf" download>
-            <button>Download Resume</button>
-        </a>
+                <h2>Full Stack Web Developer</h2>
+
+                <p>
+
+                    Passionate Full Stack Developer and Data Science enthusiast
+                    dedicated to building responsive web applications and solving
+                    real-world problems through technology.
+
+                </p>
+
+                <div class="buttons">
+
+                    <button onclick="scrollToContact()">
+                        Hire Me
+                    </button>
+
+                    <a href="resume.pdf" download>
+
+                        <button>
+                            Download Resume
+                        </button>
+
+                    </a>
+
+                    <a href="https://github.com/manojshanigaram"
+                        target="_blank">
+
+                        <button>
+
+                            <i class="fab fa-github"></i>
+
+                            GitHub
+
+                        </button>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="image">
+
+                <img src="manu.png"
+                    alt="Manoj Shanigaram">
+
+            </div>
+
+        </div>
 
     </section>
 
-    <!-- About -->
+    <!-- ================= ABOUT ================= -->
+
     <section id="about" class="section">
 
         <h2>About Me</h2>
 
-        <p>
-            I am a passionate and enthusiastic Full Stack Web Developer currently
-            pursuing my studies. I enjoy designing responsive websites,
-            building Java applications, and developing modern web applications.
-            I continuously improve my programming skills and love learning
-            new technologies to solve real-world problems.
-        </p>
+        <div class="about-container">
 
-    </section>
+            <p>
 
-    <!-- Skills -->
+                I am <strong>Manoj Shanigaram</strong>, an aspiring Full Stack
+                Web Developer and Data Science enthusiast currently pursuing
+                my undergraduate degree.
 
-    <section id="skills" class="section">
+                I enjoy creating responsive websites, developing Java
+                applications, and exploring modern web technologies.
+                My interests include Full Stack Development,
+                Machine Learning, Data Analysis, and Problem Solving.
 
-        <h2>Skills</h2>
+            </p>
 
-        <div class="skills">
+            <p>
 
-            <div class="skill">HTML5</div>
+                I have successfully completed internship projects with
+                <strong>Future Intern</strong>,
+                <strong>Cognifyz Technologies</strong>,
+                and <strong>ShadowFox</strong>,
+                where I worked on Data Science, Python,
+                Machine Learning, and Web Development projects.
 
-            <div class="skill">CSS3</div>
+            </p>
 
-            <div class="skill">JavaScript</div>
+            <p>
 
-            <div class="skill">Java</div>
+                I continuously improve my technical skills by solving coding
+                problems on LeetCode, building real-world projects,
+                and earning professional certifications.
 
-            <div class="skill">Node.js</div>
-
-            <div class="skill">Express.js</div>
-
-            <div class="skill">MongoDB</div>
-
-            <div class="skill">Git</div>
-
-            <div class="skill">GitHub</div>
-
-            <div class="skill">React (Basics)</div>
+            </p>
 
         </div>
 
     </section>
 
-    <!-- Projects -->
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                HTML5
+            </div>
+
+            <div class="skill">
+                CSS3
+            </div>
+
+            <div class="skill">
+                JavaScript
+            </div>
+
+            <div class="skill">
+                Java
+            </div>
+
+            <div class="skill">
+                Python
+            </div>
+
+            <div class="skill">
+                C Programming
+            </div>
+
+            <div class="skill">
+                SQL
+            </div>
+
+            <div class="skill">
+                Node.js
+            </div>
+
+            <div class="skill">
+                Express.js
+            </div>
+
+            <div class="skill">
+                MongoDB
+            </div>
+
+            <div class="skill">
+                Git
+            </div>
+
+            <div class="skill">
+                GitHub
+            </div>
+
+            <div class="skill">
+                React (Basics)
+            </div>
+
+            <div class="skill">
+                Data Analysis
+            </div>
+
+            <div class="skill">
+                Machine Learning
+            </div>
+
+            <div class="skill">
+                Pandas
+            </div>
+
+            <div class="skill">
+                NumPy
+            </div>
+
+            <div class="skill">
+                Matplotlib
+            </div>
+
+            <div class="skill">
+                Scikit-Learn
+            </div>
+
+            <div class="skill">
+                Problem Solving
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======= PART 2 STARTS FROM HERE ======= -->
+	    <!-- ================= PROJECTS ================= -->
 
     <section id="projects" class="section">
 
-        <h2>Projects</h2>
+        <h2>Projects & Internship Work</h2>
 
         <div class="projects">
 
             <div class="card">
-
                 <h3>SkillMap</h3>
-
                 <p>
-                    A web application that analyzes users' skills and provides
-                    personalized learning roadmaps to help them achieve their
-                    desired careers.
+                    A Full Stack web application that analyzes user skills and
+                    provides personalized learning roadmaps for career growth.
                 </p>
-
+                <a href="https://github.com/manojshanigaram/skillmap" target="_blank">
+                    View Project →
+                </a>
             </div>
 
             <div class="card">
-
-                <h3>Student Skill Tracker</h3>
-
+                <h3>Portfolio Frontend</h3>
                 <p>
-                    Java-based application for tracking students' placement
-                    readiness, technical skills, certifications,
-                    and learning progress.
+                    Responsive personal portfolio developed using HTML, CSS and
+                    JavaScript.
                 </p>
-
+                <a href="https://github.com/manojshanigaram/portfolio-frontend" target="_blank">
+                    View Project →
+                </a>
             </div>
 
             <div class="card">
-
-                <h3>Personal Portfolio</h3>
-
+                <h3>Portfolio Backend</h3>
                 <p>
-                    Responsive portfolio website built using HTML, CSS,
-                    and JavaScript with modern UI design.
+                    Backend developed using Node.js, Express.js and MongoDB for
+                    handling contact form submissions.
                 </p>
+                <a href="https://github.com/manojshanigaram/portfolio-backend" target="_blank">
+                    View Project →
+                </a>
+            </div>
 
+            <div class="card">
+                <h3>LeetCode Solutions</h3>
+                <p>
+                    Collection of coding solutions covering Data Structures,
+                    Algorithms, Arrays, Strings, Trees and Dynamic Programming.
+                </p>
+                <a href="https://github.com/manojshanigaram/Leetcode" target="_blank">
+                    View Repository →
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Future Intern - Data Science Task 1</h3>
+                <p>
+                    Data preprocessing, exploratory data analysis and
+                    visualization using Python libraries.
+                </p>
+                <a href="https://github.com/manojshanigaram/FUTURE_DS_01" target="_blank">
+                    View Repository →
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Future Intern - Data Science Task 2</h3>
+                <p>
+                    Machine Learning model implementation and evaluation using
+                    Scikit-Learn.
+                </p>
+                <a href="https://github.com/manojshanigaram/FUTURE_DS_02" target="_blank">
+                    View Repository →
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Future Intern - Data Science Task 3</h3>
+                <p>
+                    End-to-end data science project with visualization,
+                    predictive analysis and reporting.
+                </p>
+                <a href="https://github.com/manojshanigaram/FUTURE_DS_03" target="_blank">
+                    View Repository →
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Cognifyz Technologies Internship</h3>
+                <p>
+                    Completed multiple Python, Data Analysis and Machine
+                    Learning tasks during the internship.
+                </p>
+                <a href="https://github.com/manojshanigaram/Cognifyz-Data-Science-Internship-Projects" target="_blank">
+                    View Repository →
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>ShadowFox Internship</h3>
+                <p>
+                    Successfully completed beginner-level Data Science and
+                    Python internship projects.
+                </p>
+                <a href="https://github.com/manojshanigaram/ShadowFox_Beginner_level" target="_blank">
+                    View Repository →
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Bootcamp Projects</h3>
+                <p>
+                    Hands-on projects covering Web Development,
+                    Programming Fundamentals and Git/GitHub.
+                </p>
+                <a href="https://github.com/manojshanigaram/Bootcamp" target="_blank">
+                    View Repository →
+                </a>
             </div>
 
         </div>
 
     </section>
 
-    <!-- Contact -->
+
+    <!-- ================= INTERNSHIPS ================= -->
+
+    <section id="internships" class="section">
+
+        <h2>Internship Experience</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Future Intern</h3>
+                <p>
+                    Worked on Data Science projects involving data cleaning,
+                    visualization, machine learning and predictive analytics.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cognifyz Technologies</h3>
+                <p>
+                    Completed multiple internship tasks focused on Python,
+                    Machine Learning and Data Analysis.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>ShadowFox</h3>
+                <p>
+                    Successfully completed internship assignments involving
+                    Python programming and Data Science.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CERTIFICATIONS ================= -->
+
+    <section id="certifications" class="section">
+
+        <h2>Certifications</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Oracle OCI Foundations Associate</h3>
+                <p>Oracle Cloud Infrastructure Foundations Associate Certification.</p>
+            </div>
+
+            <div class="card">
+                <h3>NPTEL Certification</h3>
+                <p>Successfully completed an NPTEL online certification course.</p>
+            </div>
+
+            <div class="card">
+                <h3>Saylor Academy</h3>
+                <p>Introduction to Programming I Certification.</p>
+            </div>
+
+            <div class="card">
+                <h3>Google Cloud Skill Badge</h3>
+                <p>Earned Google Cloud Skill Badge through hands-on labs.</p>
+            </div>
+
+            <div class="card">
+                <h3>Future Intern Certificate</h3>
+                <p>Successfully completed Future Intern Data Science Internship.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cognifyz Technologies</h3>
+                <p>Data Science Internship Completion Certificate.</p>
+            </div>
+
+            <div class="card">
+                <h3>ShadowFox Internship</h3>
+                <p>Internship Completion Certificate in Python & Data Science.</p>
+            </div>
+
+            <div class="card">
+                <h3>Kalam's Institute</h3>
+                <p>Certificate of Participation in technical development program.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======= PART 3 STARTS HERE ======= -->
+	    <!-- ================= CONTACT ================= -->
 
     <section id="contact" class="section">
 
         <h2>Contact Me</h2>
 
-        <form id="contactForm">
+        <div class="contact-container">
 
-            <input
-                id="name"
-                type="text"
-                placeholder="Your Name"
-                required>
+            <div class="contact-info">
 
-            <input
-                id="email"
-                type="email"
-                placeholder="Your Email"
-                required>
+                <h3>Let's Connect!</h3>
 
-            <textarea
-                id="message"
-                placeholder="Your Message"
-                required></textarea>
+                <p>
+                    I'm always interested in new opportunities, internships,
+                    freelance projects, and collaborations.
+                </p>
 
-            <button type="submit">
-                Send Message
-            </button>
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:manojshanigaram143@gmail.com">
+                        manojshanigaram143@gmail.com
+                    </a>
+                </p>
 
-        </form>
+                <p>
+                    <strong>GitHub:</strong><br>
+                    <a href="https://github.com/manojshanigaram" target="_blank">
+                        github.com/manojshanigaram
+                    </a>
+                </p>
 
-        <p id="statusMessage"></p>
+                <p>
+                    <strong>LinkedIn:</strong><br>
+                    <a href="#" target="_blank">
+                        Add Your LinkedIn Profile
+                    </a>
+                </p>
+
+            </div>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required>
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Your Message"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+                <p id="statusMessage"></p>
+
+            </form>
+
+        </div>
 
     </section>
 
-    <!-- Footer -->
+
+    <!-- ================= FOOTER ================= -->
 
     <footer>
 
-        <p>© 2026 Manoj Shanigaram | All Rights Reserved</p>
+        <div class="footer-content">
 
-        <div class="social-links">
+            <h2>Manoj Shanigaram</h2>
 
-            <a href="https://github.com/your-github-username" target="_blank">
-                GitHub
-            </a>
+            <p>
+                Full Stack Web Developer | Data Science Enthusiast
+            </p>
 
-            |
+            <div class="social-icons">
 
-            <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">
-                LinkedIn
-            </a>
+                <a href="https://github.com/manojshanigaram"
+                    target="_blank">
 
-            |
+                    <i class="fab fa-github"></i>
 
-            <a href="mailto:manojshanigaram143@gmail.com">
-                Email
-            </a>
+                </a>
+
+                <a href="https://www.linkedin.com/in/manoj-shanigaram-6a7502328/"
+					target="_blank">
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+                <a href="mailto:manojshanigaram143@gmail.com">
+
+                    <i class="fas fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+            <hr>
+
+            <p>
+
+                © 2026 Manoj Shanigaram.
+                All Rights Reserved.
+
+            </p>
 
         </div>
 
     </footer>
 
+
+    <!-- ================= JAVASCRIPT ================= -->
+
     <script>
 
-        function scrollToContact(){
+        function scrollToContact() {
 
-            document
-                .getElementById("contact")
-                .scrollIntoView({
-                    behavior:"smooth"
-                });
+            document.getElementById("contact").scrollIntoView({
+
+                behavior: "smooth"
+
+            });
 
         }
 
@@ -228,4 +599,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
