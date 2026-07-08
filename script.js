@@ -31,17 +31,20 @@ if (contactForm) {
 
         try {
 
-            const response = await fetch("https://portfolio-backend-1-35bf.onrender.com/api/contacts", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    name,
-                    email,
-                    message
-                })
-            });
+            const response = await fetch(
+    "https://portfolio-backend-1-35bf.onrender.com/api/contact",
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            name,
+            email,
+            message
+        })
+    }
+);
 
             const result = await response.json();
 
