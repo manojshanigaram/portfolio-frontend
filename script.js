@@ -1,10 +1,8 @@
-
 function scrollToContact() {
     document.getElementById("contact").scrollIntoView({
         behavior: "smooth"
     });
 }
-
 
 const contactForm = document.getElementById("contactForm");
 
@@ -20,6 +18,9 @@ if (contactForm) {
 
         const status = document.getElementById("statusMessage");
 
+        status.innerText = "";
+        status.style.color = "white";
+
         if (!name || !email || !message) {
 
             status.style.color = "red";
@@ -30,46 +31,41 @@ if (contactForm) {
 
         try {
 
-            const response = await fetch("https://manojshanigaram-portfolio.netlify.app", {
-
+            const response = await fetch("https://portfolio-backend-1-35bf.onrender.com", {
                 method: "POST",
-
                 headers: {
-
                     "Content-Type": "application/json"
-
                 },
-
                 body: JSON.stringify({
-
                     name,
                     email,
                     message
-
                 })
-
             });
 
             const result = await response.json();
 
-            status.style.color = "lightgreen";
-            status.innerText = result.message;
+            if (response.ok) {
+                status.style.color = "lightgreen";
+                status.innerText = result.message;
+                contactForm.reset();
+            } else {
+                status.style.color = "red";
+                status.innerText = result.message || "Failed to send message.";
+            }
 
-            contactForm.reset();
+        } catch (error) {
 
-        }
-
-        catch (error) {
+            console.error(error);
 
             status.style.color = "red";
-            status.innerText = "Server not available.";
+            status.innerText = "Unable to connect to the server.";
 
         }
 
     });
 
 }
-
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
@@ -104,21 +100,26 @@ window.addEventListener("scroll", () => {
 
 });
 
-
 const revealElements = document.querySelectorAll(".card,.skill,.about-container,.contact-container");
+
+revealElements.forEach(element => {
+
+    element.style.opacity = "0";
+    element.style.transform = "translateY(40px)";
+    element.style.transition = "0.8s";
+
+});
 
 function reveal() {
 
     revealElements.forEach(element => {
 
         const windowHeight = window.innerHeight;
-
         const elementTop = element.getBoundingClientRect().top;
 
         if (elementTop < windowHeight - 120) {
 
             element.style.opacity = "1";
-
             element.style.transform = "translateY(0)";
 
         }
@@ -131,27 +132,11 @@ reveal();
 
 window.addEventListener("scroll", reveal);
 
-
-revealElements.forEach(element => {
-
-    element.style.opacity = "0";
-
-    element.style.transform = "translateY(40px)";
-
-    element.style.transition = "0.8s";
-
-});
-
 const roles = [
-
     "Full Stack Web Developer",
-
     "Java Developer",
-
     "Data Science Enthusiast",
-
     "Machine Learning Learner"
-
 ];
 
 let roleIndex = 0;
@@ -171,9 +156,7 @@ function typeRole() {
 
         setTimeout(typeRole, 100);
 
-    }
-
-    else {
+    } else {
 
         setTimeout(deleteRole, 1500);
 
@@ -191,15 +174,13 @@ function deleteRole() {
 
         setTimeout(deleteRole, 50);
 
-    }
-
-    else {
+    } else {
 
         roleIndex++;
 
-        if (roleIndex >= roles.length)
-
+        if (roleIndex >= roles.length) {
             roleIndex = 0;
+        }
 
         setTimeout(typeRole, 300);
 
@@ -210,7 +191,6 @@ function deleteRole() {
 if (roleHeading) {
 
     roleHeading.textContent = "";
-
     typeRole();
 
 }
@@ -218,7 +198,6 @@ if (roleHeading) {
 const topButton = document.createElement("button");
 
 topButton.innerHTML = "↑";
-
 topButton.id = "topBtn";
 
 document.body.appendChild(topButton);
@@ -244,9 +223,7 @@ window.addEventListener("scroll", () => {
 
         topButton.style.display = "block";
 
-    }
-
-    else {
+    } else {
 
         topButton.style.display = "none";
 
@@ -259,7 +236,6 @@ topButton.onclick = () => {
     window.scrollTo({
 
         top: 0,
-
         behavior: "smooth"
 
     });
@@ -270,8 +246,7 @@ const footer = document.querySelector("footer p:last-child");
 
 if (footer) {
 
-    footer.innerHTML =
-        `© ${new Date().getFullYear()} Manoj Shanigaram. All Rights Reserved.`;
+    footer.innerHTML = `© ${new Date().getFullYear()} Manoj Shanigaram. All Rights Reserved.`;
 
 }
 
