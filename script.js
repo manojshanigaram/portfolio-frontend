@@ -1,17 +1,10 @@
-// ===============================
-// PORTFOLIO JAVASCRIPT
-// ===============================
 
-// Smooth Scroll Function
 function scrollToContact() {
     document.getElementById("contact").scrollIntoView({
         behavior: "smooth"
     });
 }
 
-// ===============================
-// CONTACT FORM
-// ===============================
 
 const contactForm = document.getElementById("contactForm");
 
@@ -77,9 +70,6 @@ if (contactForm) {
 
 }
 
-// ===============================
-// ACTIVE NAVIGATION
-// ===============================
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
@@ -114,9 +104,6 @@ window.addEventListener("scroll", () => {
 
 });
 
-// ===============================
-// SCROLL REVEAL ANIMATION
-// ===============================
 
 const revealElements = document.querySelectorAll(".card,.skill,.about-container,.contact-container");
 
@@ -144,7 +131,6 @@ reveal();
 
 window.addEventListener("scroll", reveal);
 
-// Initial Hidden State
 
 revealElements.forEach(element => {
 
@@ -155,10 +141,6 @@ revealElements.forEach(element => {
     element.style.transition = "0.8s";
 
 });
-
-// ===============================
-// TYPING EFFECT
-// ===============================
 
 const roles = [
 
@@ -233,10 +215,6 @@ if (roleHeading) {
 
 }
 
-// ===============================
-// BACK TO TOP BUTTON
-// ===============================
-
 const topButton = document.createElement("button");
 
 topButton.innerHTML = "↑";
@@ -287,10 +265,6 @@ topButton.onclick = () => {
     });
 
 };
-
-// ===============================
-// CURRENT YEAR
-// ===============================
 
 const footer = document.querySelector("footer p:last-child");
 

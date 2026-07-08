@@ -1,12 +1,6 @@
-/* ==========================
-   GOOGLE FONT
-========================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/* ==========================
-   RESET
-========================== */
 
 *{
     margin:0;
@@ -25,9 +19,6 @@ body{
     line-height:1.6;
 }
 
-/* ==========================
-   NAVBAR
-========================== */
 
 nav{
     position:fixed;
@@ -74,9 +65,6 @@ nav ul li a:hover{
     color:#38bdf8;
 }
 
-/* ==========================
-   HOME SECTION
-========================== */
 
 .home{
     min-height:100vh;
@@ -140,9 +128,6 @@ nav ul li a:hover{
     transform:scale(1.05);
 }
 
-/* ==========================
-   BUTTONS
-========================== */
 
 .buttons{
     margin-top:35px;
@@ -169,9 +154,6 @@ nav ul li a:hover{
     text-decoration:none;
 }
 
-/* ==========================
-   COMMON SECTION
-========================== */
 
 .section{
     padding:100px 8%;
@@ -184,9 +166,6 @@ nav ul li a:hover{
     color:#38bdf8;
 }
 
-/* ==========================
-   ABOUT
-========================== */
 
 .about-container{
     max-width:950px;
@@ -202,9 +181,7 @@ nav ul li a:hover{
 
 .about-container strong{
     color:#38bdf8;
-}/* ==========================
-   SKILLS SECTION
-========================== */
+}
 
 .skills{
     display:flex;
@@ -232,9 +209,6 @@ nav ul li a:hover{
     box-shadow:0 0 20px rgba(56,189,248,.5);
 }
 
-/* ==========================
-   PROJECTS
-========================== */
 
 .projects{
     display:grid;
@@ -278,9 +252,6 @@ nav ul li a:hover{
     color:#f97316;
 }
 
-/* ==========================
-   INTERNSHIP SECTION
-========================== */
 
 #internships .projects .card{
     text-align:center;
@@ -290,9 +261,6 @@ nav ul li a:hover{
     color:#f97316;
 }
 
-/* ==========================
-   CERTIFICATION SECTION
-========================== */
 
 #certifications .card{
     text-align:center;
@@ -306,9 +274,6 @@ nav ul li a:hover{
     transform:scale(1.05);
 }
 
-/* ==========================
-   CARD ANIMATION
-========================== */
 
 .card{
     animation:fadeUp .8s ease;
@@ -332,9 +297,6 @@ nav ul li a:hover{
 
 }
 
-/* ==========================
-   SECTION TITLES
-========================== */
 
 .section h2::after{
 
@@ -354,9 +316,6 @@ nav ul li a:hover{
 
 }
 
-/* ==========================
-   PROJECT LINKS
-========================== */
 
 .card a{
 
@@ -372,10 +331,7 @@ nav ul li a:hover{
 
     transform:translateX(8px);
 
-}/* ==========================
-   CONTACT SECTION
-========================== */
-
+}
 .contact-container{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -447,9 +403,6 @@ nav ul li a:hover{
     font-weight:bold;
 }
 
-/* ==========================
-   FOOTER
-========================== */
 
 footer{
     background:#020617;
@@ -471,9 +424,6 @@ footer hr{
     border:1px solid rgba(255,255,255,.08);
 }
 
-/* ==========================
-   SOCIAL ICONS
-========================== */
 
 .social-icons{
     margin:25px 0;
@@ -500,9 +450,6 @@ footer hr{
     transform:translateY(-8px) rotate(360deg);
 }
 
-/* ==========================
-   SCROLLBAR
-========================== */
 
 ::-webkit-scrollbar{
     width:10px;
@@ -521,9 +468,6 @@ footer hr{
     background:#0284c7;
 }
 
-/* ==========================
-   IMAGE ANIMATION
-========================== */
 
 .image img{
     animation:floatImage 4s ease-in-out infinite;
@@ -545,9 +489,6 @@ footer hr{
 
 }
 
-/* ==========================
-   BUTTON ANIMATION
-========================== */
 
 button{
     transition:all .4s ease;
@@ -556,10 +497,6 @@ button{
 button:hover{
     box-shadow:0 10px 25px rgba(56,189,248,.45);
 }
-
-/* ==========================
-   RESPONSIVE DESIGN
-========================== */
 
 @media(max-width:992px){
 
@@ -656,7 +593,3 @@ button:hover{
     }
 
 }
-
-/* ==========================
-   END OF FILE
-========================== */
