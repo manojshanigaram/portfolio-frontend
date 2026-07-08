@@ -30,7 +30,7 @@ if (contactForm) {
 
         try {
 
-            const response = await fetch("http://localhost:5000/contact", {
+            const response = await fetch("https://manojshanigaram-portfolio.netlify.app", {
 
                 method: "POST",
 
