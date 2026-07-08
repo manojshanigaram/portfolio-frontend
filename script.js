@@ -31,20 +31,18 @@ if (contactForm) {
 
         try {
 
-            const response = await fetch(
-    "https://portfolio-backend-1-35bf.onrender.com/api/contact",
-    {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            name,
-            email,
-            message
-        })
-    }
-);
+            const response = await fetch("https://portfolio-backend-1-35bf.onrender.com/api/contact",{
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({
+					name,
+					email,
+					message
+				})
+			}
+			);
 
             const result = await response.json();
 
@@ -57,14 +55,14 @@ if (contactForm) {
                 status.innerText = result.message || "Failed to send message.";
             }
 
-        } catch (error) {
+        } catch (err) {
+  console.error("ERROR:", err);
 
-            console.error(error);
-
-            status.style.color = "red";
-            status.innerText = "Unable to connect to the server.";
-
-        }
+  res.status(500).json({
+    success: false,
+    message: err.message
+  });
+}
 
     });
 
